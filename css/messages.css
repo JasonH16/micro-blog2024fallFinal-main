@@ -1,0 +1,72 @@
+ /* Reset List Styles */
+.card-list {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display list items horizontally */
+    gap: 30px; /* Add more space between list items */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center the list horizontally */
+    overflow-x:auto ;
+    overflow-y: hidden;
+}
+
+/* Card Styling */
+.message {
+    background: #fff;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhance the shadow for a raised effect */
+    padding: 30px; /* Add more padding inside the card */
+    width: 400px; /* Increase card width */
+    height: 300px; /* Increase card height */
+    flex-shrink: 0; /* Prevent the cards from shrinking */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between elements inside the card */
+    align-items: flex-start; /* Align content to the left */
+    margin: 20px;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+/* Text Styling Inside Cards */
+.message p {
+    margin: 0;
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+    color: #333;
+}
+
+.message strong {
+    font-size: 1.2rem; /* Larger font for usernames */
+    color: #6a11cb;
+}
+
+/* Like/Dislike Buttons */
+.message button {
+    padding: 12px 20px; /* Make buttons larger */
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem; /* Increase button font size */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.message button.like {
+    background: #6a11cb;
+    color: #fff;
+}
+
+.message button.dislike {
+    background: #fc5a5a;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.message button.like:hover {
+    background: #5737a3;
+}
+
+.message button.dislike:hover {
+    background: #d44949;
+}
+

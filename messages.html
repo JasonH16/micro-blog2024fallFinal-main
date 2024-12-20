@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/messages.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/messages.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign-Up</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="new.html">Create Post</a>
+        </nav>
+    </header>
+   
+    <div id="output">
+        <ul class="card-list">
+            <li class="message">
+                <p><strong>Username1</strong> - 12/19/2024</p>
+                <p>This is the first message.</p>
+                <p>Likes: <span id="likes-1">5</span></p>
+                <button class="like" data-post_id="1">Like</button>
+                <button class="dislike" data-post_id="1">Dislike</button>
+            </li>
+            <li class="message">
+                <p><strong>Username2</strong> - 12/19/2024</p>
+                <p>This is the second message.</p>
+                <p>Likes: <span id="likes-2">8</span></p>
+                <button class="like" data-post_id="2">Like</button>
+                <button class="dislike" data-post_id="2">Dislike</button>
+            </li>
+            <!-- Additional cards -->
+        </ul>
+    </div>
+</body>
+
+</html>

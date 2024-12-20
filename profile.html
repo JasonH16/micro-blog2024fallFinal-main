@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="./js/main.js"></script>
+    <script src="./js/profile.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./js/profile.js">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign-Up</a>
+            <a href="profile.html">Profile</a>
+            <a href="messages.html">Messages</a>
+            <a href="new.html">Create Post</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h2>Profile Information</h2>
+         <div id="profileInfo"></div>
+            <!-- Profile Form -->
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="input" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Your Bio:</label>
+                    <textarea id="bio" class="input bio-input" placeholder="Write something about yourself...">Bio</textarea>
+                </div>
+                <button type="button" id="saveProfileButton" class="btn">Save Changes</button>
+            </form>
+        </section>
+        <button id="logoutButton" class="logout-btn">Logout</button>
+    </main>
+    
+
+</body>
+
+</html>
